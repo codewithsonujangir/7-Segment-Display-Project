@@ -1,0 +1,89 @@
+/*    My Project no. #10    */
+
+
+
+
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.digit {
+    width: 100px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.gap-small {
+    width: 25px;
+    height: 25px;
+}
+
+.gap-big {
+    width: 50px;
+    height: 50px;
+}
+
+.segmentH {
+    width: 50px;
+    height: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.segmentV {
+    width: 25px;
+    height: 50px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.segment-on {
+    animation: segmentOn 0.5s forwards;
+}
+
+.segment-off {
+    animation: segmentOff 0.5s forwards;
+}
+
+@keyframes segmentOn {
+    to {
+        box-shadow: 5px 8px 5px #ADAEB0,
+                                -5px -8px 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
+@keyframes segmentOff {
+    from {
+        box-shadow: 5px 8px 5px #ADAEB0,
+                                -5px -8px 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
+
+
+
+
+
+
+
+
